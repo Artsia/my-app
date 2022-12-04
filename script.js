@@ -14,7 +14,14 @@ app.listen(PORT, ()=> {
 /**Welcome page */
 app.get(`${baseUrl}`,(req,res)=>{
   
-    res.send("WELCOME TO ONE PIECE API"); 
+    res.send("WELCOME TO ONE PIECE API. Try following end points"
+    
+    +`\n\nhttp://localhost:${PORT}${baseUrl}/crewName`+
+    `\nhttp://localhost:${PORT}${baseUrl}/crewMembers`+
+    `\nhttp://localhost:${PORT}${baseUrl}/Companions`+
+    `\nhttp://localhost:${PORT}${baseUrl}/Ships`
+    
+    ); 
 
 })
 
